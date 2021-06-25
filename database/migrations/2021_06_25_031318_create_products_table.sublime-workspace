@@ -1,0 +1,230 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"foto",
+				"foto_mahasiswa"
+			],
+			[
+				"jurusan",
+				"jurusan_mahasiswa"
+			],
+			[
+				"email",
+				"email_mahasiswa"
+			],
+			[
+				"padding",
+				"padding-left\tproperty"
+			],
+			[
+				"list",
+				"list-style-type\tproperty"
+			],
+			[
+				"backg",
+				"background-color\tproperty"
+			],
+			[
+				"wid",
+				"width\tproperty"
+			],
+			[
+				"bacgroud",
+				"background-color\tproperty"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/xampp/htdocs/latihan/function.php",
+		"/C/xampp/htdocs/latihan/index.php",
+		"/C/xampp/htdocs/toko_kiky/pencarian.php",
+		"/C/xampp/htdocs/latihan/cari.php",
+		"/C/xampp/htdocs/latihan/ubah.php",
+		"/C/xampp/htdocs/toko_kiky/admin/hapusproduk.php",
+		"/C/xampp/htdocs/latihan/hapus.php",
+		"/C/xampp/htdocs/toko_kiky/admin/ubahproduk.php",
+		"/C/xampp/htdocs/latihan/tambah.php",
+		"/C/xampp/htdocs/latihan/login.php",
+		"/C/xampp/htdocs/toko_kiky/admin/produk.php",
+		"/C/xampp/htdocs/toko_kiky/admin/tambahpelanggan.php",
+		"/C/xampp/htdocs/toko_kiky/admin/tambahproduk.php",
+		"/C/xampp/htdocs/toko_kiky/daftar.php",
+		"/C/xampp/htdocs/toko_kiky/index.php",
+		"/C/xampp/htdocs/toko_kiky/logout.php",
+		"/C/xampp/htdocs/latihan/logout.php",
+		"/C/xampp/htdocs/toko_kiky/menu.php",
+		"/C/xampp/htdocs/toko_kiky/checkout.php",
+		"/C/xampp/htdocs/toko_kiky/login.php",
+		"/C/xampp/htdocs/latihan/koneksi.php",
+		"/C/xampp/htdocs/latihan/register.php",
+		"/C/xampp/htdocs/latihan/daftar.php",
+		"/C/xampp/htdocs/latihan/registrasi.php",
+		"/C/xampp/htdocs/toko_kiky/koneksi.php",
+		"/C/xampp/htdocs/latihan/login.html",
+		"/D/Latihan program/html/Latihan5/Halaman5.html",
+		"/D/Latihan program/css/style.css",
+		"/D/Latihan program/css/eksternal.html",
+		"/D/Latihan program/css/inline.html",
+		"/D/Latihan program/css/latihan1.html",
+		"/D/Latihan program/Latihancss1/embed.html",
+		"/D/Latihan program/semantic.html",
+		"/D/Latihan program/semantic element.html"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "2021_06_25_031318_create_products_table.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 85.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
