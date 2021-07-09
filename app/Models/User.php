@@ -16,10 +16,16 @@ class User extends Authenticatable
      *
      * @var array
      */
+    /** Field yang akan dilindungi (Tidak boleh sembarangan diisi) */
+    // protected $guarded = [];
+
+    /** Field yang boleh diisi sama user */
     protected $fillable = [
         'name',
         'email',
         'password',
+        'phone',
+        'address'
     ];
 
     /**
@@ -27,6 +33,7 @@ class User extends Authenticatable
      *
      * @var array
      */
+    /** Buat menyembunyikan dari SELECT *  */
     protected $hidden = [
         'password',
         'remember_token',
