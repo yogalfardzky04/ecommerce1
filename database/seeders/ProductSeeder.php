@@ -16,7 +16,7 @@ class ProductSeeder extends Seeder
     {
         Product::updateOrCreate ([
         'name' => 'Monitor',
-        'user_id' => '2',
+        'user_id' => '3',
     ] , [
         'description' => 'Monitor LCD',
         'price' => 1000000,
@@ -26,7 +26,7 @@ class ProductSeeder extends Seeder
 
         Product::updateOrCreate ([
         'name' => 'Keyboard',
-        'user_id' => '1',
+        'user_id' => '5',
     ] , [
         'description' => 'Keyboard LED RGB',
         'price' => 600000,
@@ -36,7 +36,7 @@ class ProductSeeder extends Seeder
 
         Product::updateOrCreate ([
         'name' => 'Mouse',
-        'user_id' => '3',
+        'user_id' => '6',
     ] , [
         'description' => 'Mouse Gaming RGB',
         'price' => 200000,

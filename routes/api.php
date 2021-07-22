@@ -16,12 +16,11 @@ Route::put('/products/{id}','App\Http\Controllers\Api\ProductsController@update'
 Route::delete('/products/{id}','App\Http\Controllers\Api\ProductsController@destroy')->name('api.products.destroy');
 
 Route::get('/carts','App\Http\Controllers\Api\CartsController@index')->name('api.carts.index');
-Route::post('/carts','App\Http\Controllers\Api\CartsController@store')->name('api.carts.store');
+Route::post('/carts','App\Http\Controllers\Api\TransactionController@store')->name('api.carts.store');
 Route::delete('/carts/{id}','App\Http\Controllers\Api\CartsController@destroy')->name('api.carts.destroy');
 
-Route::post('/checkout','App\Http\Controllers\Api\CheckoutController@store')->name('api.checkout.store');
-
 Route::get('/transaction/{id}','App\Http\Controllers\Api\TransactionController@show')->name('api.transaction.show');
+Route::post('/checkout','App\Http\Controllers\Api\TransactionController@store')->name('api.checkout.store');
 //Route::apiResource('/users','App\Http\Controllers\Api\UsersController') // semua method
 
 // Route::apiResource(/'products','App\Http\Controllers\Api\UsersController')->only['store']); 

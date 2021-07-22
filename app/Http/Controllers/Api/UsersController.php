@@ -18,7 +18,7 @@ class UsersController extends Controller
         // Cara 2. lebih fleksibel dalam penggunaan where nya
         $users = User::query();
         if($request->has('address')) $users->where('address', $request->address);
-        if($request->has('name')) $users->whee('name', $request->name);
+        if($request->has('name')) $users->where('name', $request->name);
 
         // Query berdasarkan urutan
         if($request->has('order_by') && $request->has('order_type')) {
@@ -104,10 +104,10 @@ class UsersController extends Controller
     {
     	$request->validate([
             'name'      => 'required|max:255',
-            'email'     => 'required|email|unique:users,email,'.$id,
+            'email'     => 'email|unique:users,email,'.$id,
             'password'  => 'nullable|min:6',
-            'phone'     => 'required|min:10',
-            'address'   => 'required' 
+            'phone'     => 'min:10',
+            'address'   => 'max:300'
 
         ]);
 
@@ -120,7 +120,7 @@ class UsersController extends Controller
             'address'
 
         ]));
-        if($request->has('passord')) {
+        if($request->has('password')) {
         $user->password = bcrypt($request->password);
         }
 
