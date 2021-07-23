@@ -71,4 +71,12 @@ class TransactionController extends Controller
             'message' => "Berhasil membuat transaksi"
         ];
     }
+
+    public function show($id)
+    {
+        $transaction_detail = TransactionDetail::findOrFail($id);
+        return response()->json([
+            'data' => $transaction_detail
+        ]);
+    }
 }

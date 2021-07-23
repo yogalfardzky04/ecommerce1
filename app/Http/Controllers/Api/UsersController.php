@@ -38,7 +38,7 @@ class UsersController extends Controller
             'password'  => 'required|min:6',
             'phone'     => 'required|min:10',
             'address'   => 'required',
-            'photo'     => 'required|file|max:2048'
+            'photo'     => 'nullable|file|max:2048'
 
         ]);
 
@@ -50,7 +50,8 @@ class UsersController extends Controller
             'name',
             'email',
             'phone',
-            'address'
+            'address',
+            'photo'
 
         ]));
         $user->password = bcrypt($request->password);
@@ -107,7 +108,8 @@ class UsersController extends Controller
             'email'     => 'email|unique:users,email,'.$id,
             'password'  => 'nullable|min:6',
             'phone'     => 'min:10',
-            'address'   => 'max:300'
+            'address'   => 'max:300',
+            'photo'     => 'nullable|file|max:2048'
 
         ]);
 
@@ -117,13 +119,15 @@ class UsersController extends Controller
             'name',
             'email',
             'phone',
-            'address'
+            'address',
+            'photo'
 
         ]));
         if($request->has('password')) {
         $user->password = bcrypt($request->password);
         }
 
+        $user->photo    = $request->file('photo')->store('public/photo');
         $user->save();
 
         return response()->json([

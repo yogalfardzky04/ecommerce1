@@ -26,22 +26,37 @@ class ProductsController extends Controller
     public function store(Request $request)
     {
     	$request->validate([
-            'name'            => 'required|max:255',
-            'price'           => 'required|max:30',
-            'stok'            => 'required|max:10',
-            'photo'           => 'required|file|max:2048'
+            'user_id'         => 'required|exists:users,id',
+            'name'            => 'required|unique:products,name',
+            'description'     => 'nullable',
+            'price'           => 'required',
+            'stok'            => 'required',
+            'photo'           => 'nullable|file|max:2048'
 
         ]);
 
+
         $product = new Product();
         $product->fill($request->only([
+            'user_id',
             'name',
             'description',
             'price',
             'stok',
             'photo'
-
         ]));
+
+    //     Product::updateOrCreate([
+    //     'name'          => $request->name,
+    // ],[
+    //     'user_id'       => $request->user_id,
+    //     'description'   => $request->description,
+    //     'price'         => $request->price,
+    //     'stok'          => $request->stok,
+    //     'photo'         => $request->photo,
+    //     ]);
+
+        
         // Upload File NOTE: tambahkan di PUT juga
         $product->photo    = $request->file('photo')->store('public/photo');
         // End Upload File
@@ -64,15 +79,18 @@ class ProductsController extends Controller
     public function update($id, Request $request)
     {
     	$request->validate([
-            'name'            => 'required|max:255',
-            'price'           => 'required|max:30',
-            'stok'            => 'required|max:10',
-            'photo'           => 'required|file|max:2048'
+            'user_id'         => 'required|exists:users,id',
+            'name'            => 'required|unique:products,name',
+            'description'     => 'nullable',
+            'price'           => 'required',
+            'stok'            => 'required',
+            'photo'           => 'nullable|file|max:2048'
 
         ]);
 
         $product = new Product();
         $product->fill($request->only([
+            'user_id',
             'name',
             'description',
             'price',
@@ -80,6 +98,17 @@ class ProductsController extends Controller
             'photo'
 
         ]));
+
+    //     Product::updateOrCreate([
+    //     'user_id'       => $request->user_id,
+    // ],[
+    //     'name'          => $request->name,
+    //     'description'   => $request->description,
+    //     'price'         => $request->price,
+    //     'stok'          => $request->stok,
+    //     'photo'         => $request->photo,
+    //     ]);
+
         $product->photo    = $request->file('photo')->store('public/photo');
         $product->save();
 

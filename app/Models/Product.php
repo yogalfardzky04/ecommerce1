@@ -11,6 +11,7 @@ class Product extends Model
 
     /** Field yang boleh diisi sama user */
     protected $fillable = [
+        'user_id',
         'name',
         'description',
         'price',

@@ -19,6 +19,22 @@
                     <x-nav-link :href="route('product.index')" :active="request()->routeIs('product.index')">
                         {{ __('Product') }}
                     </x-nav-link>
+
+                    <x-nav-link :href="route('cart.index')" :active="request()->routeIs('cart.index')">
+                        {{ __('Cart') }}
+                    </x-nav-link>
+
+                    <x-nav-link :href="route('transaction.index')" :active="request()->routeIs('transaction.index')">
+                        {{ __('Transaction') }}
+                    </x-nav-link>
+
+                    <x-nav-link :href="route('transaction_detail.index')" :active="request()->routeIs('transaction_detail.index')">
+                        {{ __('Transaction Detail') }}
+                    </x-nav-link>
+
+                    <x-nav-link :href="route('user.index')" :active="request()->routeIs('user.index')">
+                        {{ __('User') }}
+                    </x-nav-link>
                 </div>
             </div>
 
@@ -73,6 +89,22 @@
 
             <x-responsive-nav-link :href="route('product.index')" :active="request()->routeIs('product.index')">
                 {{ __('Product') }}
+            </x-responsive-nav-link>
+
+            <x-responsive-nav-link :href="route('cart.index')" :active="request()->routeIs('cart.index')">
+                {{ __('Cart') }}
+            </x-responsive-nav-link>
+
+            <x-responsive-nav-link :href="route('transaction.index')" :active="request()->routeIs('transaction.index')">
+                {{ __('Transaction') }}
+            </x-responsive-nav-link>
+
+            <x-responsive-nav-link :href="route('transaction_detail.index')" :active="request()->routeIs('transaction_detail.index')">
+                {{ __('Transaction Detail') }}
+            </x-responsive-nav-link>
+
+            <x-responsive-nav-link :href="route('user.index')" :active="request()->routeIs('user.index')">
+                {{ __('User') }}
             </x-responsive-nav-link>
         </div>
 
