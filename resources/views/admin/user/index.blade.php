@@ -8,7 +8,7 @@
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 bg-white border-b border-gray-200">
+                <div class="p-6 bg-white border-b border-gray-200 table-responsive">
                     <table class="table table-striped table-bordered">
                         <thead>
                             <tr>
@@ -16,7 +16,6 @@
                                 <th>Name</th>
                                 <th>Email</th>
                                 <th>Email Verified at</th>
-                                <th>Password</th>
                                 <th>Phone</th>
                                 <th>Address</th>
                                 <th>Photo</th>
@@ -29,7 +28,6 @@
                                 <td>{{ $u->name }}</td>
                                 <td>{{ $u->email }}</td>
                                 <td>{{ $u->email_verified_at }}</td>
-                                <td>{{ $u->password }}</td>
                                 <td>{{ $u->phone }}</td>
                                 <td>{{ $u->address }}</td>
                                 <td>{{ $u->photo }}</td>

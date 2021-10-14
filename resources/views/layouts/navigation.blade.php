@@ -20,6 +20,10 @@
                         {{ __('Product') }}
                     </x-nav-link>
 
+                    <x-nav-link :href="route('product_kategori.index')" :active="request()->routeIs('product_kategori.index')">
+                        {{ __('Kategori Product') }}
+                    </x-nav-link>
+
                     <x-nav-link :href="route('cart.index')" :active="request()->routeIs('cart.index')">
                         {{ __('Cart') }}
                     </x-nav-link>
@@ -89,6 +93,10 @@
 
             <x-responsive-nav-link :href="route('product.index')" :active="request()->routeIs('product.index')">
                 {{ __('Product') }}
+            </x-responsive-nav-link>
+
+            <x-responsive-nav-link :href="route('product_kategori.index')" :active="request()->routeIs('product_kategori.index')">
+                {{ __('Kategori Product') }}
             </x-responsive-nav-link>
 
             <x-responsive-nav-link :href="route('cart.index')" :active="request()->routeIs('cart.index')">

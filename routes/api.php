@@ -15,6 +15,8 @@ Route::get('/products/{id}','App\Http\Controllers\Api\ProductsController@show')-
 Route::post('/products/{id}','App\Http\Controllers\Api\ProductsController@update')->name('api.products.update');
 Route::delete('/products/{id}','App\Http\Controllers\Api\ProductsController@destroy')->name('api.products.destroy');
 
+Route::get('/product_kategori','App\Http\Controllers\Api\ProductKategoriController@index')->name('api.product_kategori.index');
+
 Route::get('/carts','App\Http\Controllers\Api\CartsController@index')->name('api.carts.index');
 Route::post('/carts','App\Http\Controllers\Api\TransactionController@store')->name('api.carts.store');
 Route::delete('/carts/{id}','App\Http\Controllers\Api\CartsController@destroy')->name('api.carts.destroy');

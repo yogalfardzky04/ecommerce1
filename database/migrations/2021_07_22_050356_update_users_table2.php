@@ -13,11 +13,9 @@ class UpdateUsersTable2 extends Migration
      */
     public function up()
     {
-         {
         schema::table('users', function(Blueprint $table){
             $table->string('photo')->nullable()->after('address');
         });
-    }
     }
 
     /**

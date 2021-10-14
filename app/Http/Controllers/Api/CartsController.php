@@ -26,7 +26,6 @@ class CartsController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'user_id'         => 'required|exists:users,id',
             'product_id'      => 'required|exists:products,id',
             'quantity'        => 'required',
             'description'     => 'nullable'
@@ -44,16 +43,20 @@ class CartsController extends Controller
         // $cart->save();
 
         Cart::updateOrCreate([
-        'user_id'       => $request->user_id,
+        'user_id'       => auth()->user()->id,
         'product_id'    => $request->product_id
     ],[
         'description'   => $request->description,
         'quantity'      => $request->quantity,
         ]);
 
+        if($request->is('api/*')) {
         return response()->json([
             'message' => "Berhasil menambah data",
         ]);
+    } else {
+        return redirect()->back();
+    }
 
     }
 
